@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6f8; }
+header { background:#0A66C2; color:white; padding:12px 16px; text-align:center; }
+main { max-width:900px; margin:20px auto; padding:10px; }
+input { padding:8px; margin:6px 0; width:100%; max-width:400px; }
+button { padding:8px 12px; margin:6px 0; }
+#results .user { background:white; padding:10px; margin:8px 0; border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }

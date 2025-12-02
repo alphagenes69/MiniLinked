@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini LinkedIn — Resume Upload</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MiniLinked — Upload Resume</h1>
+  </header>
+
+  <main>
+    <section id="auth">
+      <h2>Register</h2>
+      <input id="reg_name" placeholder="Full name"><br>
+      <input id="reg_email" placeholder="Email"><br>
+      <input id="reg_password" type="password" placeholder="Password"><br>
+      <button id="btnRegister">Register</button>
+
+      <hr>
+
+      <h2>Login</h2>
+      <input id="login_email" placeholder="Email"><br>
+      <input id="login_password" type="password" placeholder="Password"><br>
+      <button id="btnLogin">Login</button>
+    </section>
+
+    <section id="profileSection" style="display:none;">
+      <h2>Welcome, <span id="userName"></span></h2>
+      <p id="userTitle"></p>
+      <p id="userBio"></p>
+
+      <h3>Upload Resume (PDF/DOC/DOCX)</h3>
+      <input type="file" id="resumeFile" accept=".pdf,.doc,.docx"><br>
+      <button id="btnUploadResume">Upload Resume</button>
+      <p id="uploadStatus"></p>
+
+      <h3>Your Resume</h3>
+      <p id="resumeInfo"></p>
+      <a id="downloadLink" href="#" target="_blank" style="display:none">Download Resume</a>
+
+      <hr>
+      <button id="btnLogout">Logout</button>
+    </section>
+
+    <section id="searchSection">
+      <h2>Search Users / View Profiles</h2>
+      <input id="q" placeholder="Search by name"><button id="btnSearch">Search</button>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
